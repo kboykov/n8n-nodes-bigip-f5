@@ -207,7 +207,6 @@ export const systemDescription: INodeProperties[] = [
     type: 'options',
     required: true,
     default: 'save',
-    description: 'Operation to perform on the UCS archive',
     displayOptions: {
       show: {
         resource: ['system'],

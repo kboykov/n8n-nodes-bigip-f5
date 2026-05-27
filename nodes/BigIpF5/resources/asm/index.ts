@@ -669,7 +669,7 @@ export const asmDescription: INodeProperties[] = [
 
   // ─── Update Signatures ─────────────────────────────────────────────────────
   {
-    displayName: 'Update Signatures Options',
+    displayName: 'Update Fields',
     name: 'updateSigOptions',
     type: 'collection',
     placeholder: 'Add Option',

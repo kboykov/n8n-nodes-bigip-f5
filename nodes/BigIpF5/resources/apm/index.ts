@@ -62,7 +62,7 @@ export const apmDescription: INodeProperties[] = [
       {
         name: 'Get OAuth Token Statistics',
         value: 'getOAuthTokenStats',
-        action: 'Get OAuth token statistics',
+        action: 'Get token statistics',
         description: 'Retrieve a count and summary of active OAuth tokens',
         routing: {
           request: {
@@ -86,7 +86,7 @@ export const apmDescription: INodeProperties[] = [
       {
         name: 'Revoke OAuth Token',
         value: 'revokeOAuthToken',
-        action: 'Revoke an OAuth token',
+        action: 'Revoke an access token',
         description: 'Immediately revoke an active OAuth access token',
         routing: {
           request: {

@@ -13,7 +13,7 @@ export class BigIpF5Api implements ICredentialType {
 
   icon: Icon = {
     light: 'file:../nodes/BigIpF5/bigip-f5.svg',
-    dark: 'file:../nodes/BigIpF5/bigip-f5.svg',
+    dark: 'file:../nodes/BigIpF5/bigip-f5.dark.svg',
   };
 
   documentationUrl = 'https://clouddocs.f5.com/api/icontrol-rest/';
@@ -46,7 +46,7 @@ export class BigIpF5Api implements ICredentialType {
     },
     {
       displayName: 'Ignore SSL Certificate Errors',
-      name: 'allowUnauthorizedCerts',
+      name: 'ssl',
       type: 'boolean',
       default: true,
       description:
@@ -69,7 +69,7 @@ export class BigIpF5Api implements ICredentialType {
       baseURL: '={{$credentials.host}}',
       url: '/mgmt/shared/settings/api-status/availability',
       method: 'GET',
-      skipSslCertificateValidation: '={{$credentials.allowUnauthorizedCerts}}',
+      skipSslCertificateValidation: '={{$credentials.ssl}}',
     },
   };
 }

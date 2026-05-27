@@ -33,7 +33,7 @@ export class BigIpF5 implements INodeType {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      skipSslCertificateValidation: '={{$credentials.allowUnauthorizedCerts}}',
+      skipSslCertificateValidation: '={{$credentials.ssl}}',
     },
     properties: [
       // ─── Resource selector ───────────────────────────────────────────────
@@ -57,7 +57,7 @@ export class BigIpF5 implements INodeType {
           {
             name: 'Authentication',
             value: 'auth',
-            description: 'iControl REST token management and module discovery',
+            description: 'IControl REST token management and module discovery',
           },
           {
             name: 'LTM',

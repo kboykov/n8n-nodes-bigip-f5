@@ -55,7 +55,7 @@ export const authDescription: INodeProperties[] = [
   // ─── Request Token ─────────────────────────────────────────────────────────
   {
     displayName: 'Username',
-    name: 'tokenUsername',
+    name: 'loginUsername',
     type: 'string',
     default: '',
     required: true,
@@ -75,7 +75,7 @@ export const authDescription: INodeProperties[] = [
   },
   {
     displayName: 'Password',
-    name: 'tokenPassword',
+    name: 'loginPassword',
     type: 'string',
     typeOptions: {
       password: true,
@@ -122,6 +122,9 @@ export const authDescription: INodeProperties[] = [
     displayName: 'Token UUID',
     name: 'tokenUuid',
     type: 'string',
+    typeOptions: {
+      password: true,
+    },
     default: '',
     required: true,
     description: 'UUID of the authentication token to look up',
