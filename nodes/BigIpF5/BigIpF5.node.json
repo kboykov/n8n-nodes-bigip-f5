@@ -1,0 +1,19 @@
+{
+  "node": "n8n-nodes-bigip-f5.bigIpF5",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Development", "Network"],
+  "resources": {
+    "credentialDocumentation": [
+      {
+        "url": "https://clouddocs.f5.com/api/icontrol-rest/"
+      }
+    ],
+    "primaryDocumentation": [
+      {
+        "url": "https://clouddocs.f5.com/api/icontrol-rest/"
+      }
+    ]
+  },
+  "alias": ["f5", "bigip", "big-ip", "ltm", "asm", "apm", "icontrol", "load balancer", "waf"]
+}
